@@ -35,11 +35,9 @@ class MainActivity : AppCompatActivity() {
                     runOnUiThread {
                         val sortedArray = Arrays.toString(inputArray)
                         val allPasses = StringBuilder()
-
                         for ((index, pass) in passes.withIndex()) {
                             allPasses.append("Pass ${index + 1}:\n$pass\n\n")
                         }
-
                         passTextView.text = allPasses.toString() + "Final Sorted Array:\n$sortedArray"
                         passTextView.visibility = View.VISIBLE
                         sortedArrayTextView.visibility = View.GONE
