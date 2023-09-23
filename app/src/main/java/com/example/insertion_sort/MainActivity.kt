@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
                     }
                 }.start()
             } else {
-                passTextView.text = "Invalid input! Please enter the integers from 0 to 9 with a size between 2 and 8."
+                passTextView.text = "Invalid input! Please only enter integers from 0 to 9 with a size between 2 and 8."
                 passTextView.visibility = View.VISIBLE
                 sortedArrayTextView.visibility = View.GONE
             }
